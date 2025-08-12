@@ -11,8 +11,7 @@
 - Установленный phpMyAdmin (опционально)
 
 Развертывание проекта:
-1. Клонировать репозиторий:
-   
+1. Клонировать репозиторий:<br>
 "git clone https://github.com/temastraik/vnature_to-to_project <br> cd vnature_to-to_project"
 
 2. В каталоге backend создать .env на основе .env.example, отредактировать настройки базы данных по вашим параметрам
@@ -20,19 +19,15 @@
 
 3. Запустить базу данных в MySQL (через phpMyAdmin или командную строку)
 
-4. В терминале установить и запустить необходимое PHP окружение
-
+4. В терминале установить и запустить необходимое PHP окружение<br>
 "cd backend <br> composer install <br> php artisan migrate <br> php artisan key:generate"
 
-5. В терминале установить необходимое JavaScript окружение
-
+5. В терминале установить необходимое JavaScript окружение<br>
 "cd .. <br> cd frontend <br> npm install"
 
-6. В терминале запустить сервер
-   
+6. В терминале запустить сервер<br>
 "cd .. <br> cd backend <br> php artisan serve"
 
-7. Собрать фронтенд с другого терминала
-    
+7. Собрать фронтенд с другого терминала<br>
 "cd vnature_to-to_project <br> cd frontend <br> npm run dev"
 
