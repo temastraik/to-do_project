@@ -1,4 +1,5 @@
 Общие положения функциональности:
+- Laravel + Vue.
 - Веб-приложение для управления задачами.
 - Все взаимодействие идет через API.
 - Аутентификация не требуется.
@@ -11,23 +12,35 @@
 - Установленный phpMyAdmin (опционально)
 
 Развертывание проекта:
-1. Клонировать репозиторий:<br>
-"git clone https://github.com/temastraik/vnature_to-to_project <br> cd vnature_to-to_project"
-
+1. Клонировать репозиторий:
+```bash
+git clone https://github.com/temastraik/to-do_project
+cd to-do_project
+```
 2. В каталоге backend создать .env на основе .env.example, отредактировать настройки базы данных по вашим параметрам
 <img width="291" height="116" alt="image" src="https://github.com/user-attachments/assets/15da9e65-ac1e-49ad-b22c-3f72191ad21d" />
 
-3. Запустить базу данных в MySQL (через phpMyAdmin или командную строку)
-
-4. В терминале установить и запустить необходимое PHP окружение<br>
-"cd backend <br> composer install <br> php artisan migrate <br> php artisan key:generate"
-
-5. В терминале установить необходимое JavaScript окружение<br>
-"cd .. <br> cd frontend <br> npm install"
-
-6. В терминале запустить сервер<br>
-"cd .. <br> cd backend <br> php artisan serve"
-
-7. Собрать фронтенд с другого терминала<br>
-"cd vnature_to-to_project <br> cd frontend <br> npm run dev"
-
+3. В терминале установить и запустить необходимое PHP окружение
+```bash
+cd backend
+composer install
+php artisan migrate
+```
+4. В терминале установить необходимое JavaScript окружение
+```bash
+cd ..
+cd frontend
+npm install
+```
+5. В терминале запустить сервер
+```bash
+cd ..
+cd backend
+php artisan serve
+```
+6. Собрать фронтенд с другого терминала
+```bash
+cd to-do_project
+cd frontend
+npm run dev
+```
