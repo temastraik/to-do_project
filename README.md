@@ -25,6 +25,7 @@ cd to-do_project
 cd backend
 composer install
 php artisan migrate
+php artisan key:generate
 ```
 4. В терминале установить необходимое JavaScript окружение
 ```bash
